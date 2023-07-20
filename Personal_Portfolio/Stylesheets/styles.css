@@ -2,6 +2,32 @@ body{
     margin: 0;
 }
 
-h1{
-    color: blueviolet;
+.project_image{
+    max-width: 200px;
+    min-width: 200px;
+    width: 100%;
+}
+
+ul.nav_list{
+    padding-top: 2em;
+    list-style-type: none;
+    display: inline;
+    vertical-align: middle;
+}
+
+ul.nav_list li{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px 7px;
+    background-color: #241F21;
+}
+
+ul.nav_list li a{
+    text-decoration: none;
+    color: #e0d6b5;
+}
+
+ul.nav_list li a:hover{
+    color: #9f926e;
 }
