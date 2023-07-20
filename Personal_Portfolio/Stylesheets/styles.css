@@ -1,5 +1,6 @@
 body{
-    margin: 0;
+    font-family: 'Times New Roman', sans-seriff;
+    font-size: 22px;
 }
 
 .project_image{
@@ -9,18 +10,21 @@ body{
 }
 
 ul.nav_list{
-    padding-top: 2em;
     list-style-type: none;
-    display: inline;
+    display: flex;
     vertical-align: middle;
+    margin: 0;
+    padding: 0;
 }
 
 ul.nav_list li{
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    padding: 7px 7px;
+    padding: 10px 10px;
     background-color: #241F21;
+    margin: 0;
+    border: 0;
 }
 
 ul.nav_list li a{
@@ -29,5 +33,20 @@ ul.nav_list li a{
 }
 
 ul.nav_list li a:hover{
-    color: #9f926e;
+    /*color: #9f926e;*/
+    position: relative;
+}
+
+ul.nav_list li:last-child{
+    position: absolute;
+    right: 10em;
+    background-color: #e1e1e1;
+}
+
+ul.nav_list li:last-child a{
+    color: #363434;
+}
+
+ul.nav_list li:last-child a:hover{
+    color: #000000;
 }
