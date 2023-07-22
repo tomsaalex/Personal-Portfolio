@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Stylesheets/styles.css">
+    <link rel="stylesheet" href="Stylesheets/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <title>Alex Tomșa's Portfolio</title>
@@ -23,7 +23,6 @@
                 <div class="title-wrapper">
                     <h1 class="title">My name is <span class="colored-accent"><strong>Alex</strong></span></h1>
                     <p class="short-description">I am a professional programmer with more than 2 days of experience.</p>
-
                 </div>
                 <div class="language-wrapper">
 
@@ -54,7 +53,7 @@
             </div>
         </section>
         <section>
-            <h2 class="projects-header">My Projects</h2>
+            <h2 class="h2-heading">My Projects</h2>
             <div class="projects-grid">
                 <figure>
                     <img class="project_image" src="../Assets/icons/no-image.jpg" alt="Missing image">
@@ -81,6 +80,24 @@
                     <figcaption class="project-caption">Project 6</figcaption>
                 </figure>
             </div>
+        </section>
+        <section>
+            <h2 class="h2-heading">Contact Me</h2>
+            <form class="contact-form" method="POST" action="#">
+                <label class="contact-form-items" for="name-input">
+                    Your Full Name:
+                    <input  class="contact-form-items" id="name-input" type="text" name="name">
+                </label>
+                <label  class="contact-form-items" for="email-input">
+                    Your E-mail:
+                    <input  class="contact-form-items" type="email" name="email" id="email-input">
+                </label>
+                <label class="contact-form-items">
+                    Your message:
+                    <input class="contact-form-items" type="text" name="message" id="message-input">
+                </label>
+                <input  class="contact-form-items submit-button" type="submit">
+            </form>
         </section>
     </main>
 </body>
