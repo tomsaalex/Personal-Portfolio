@@ -12,12 +12,15 @@
     --purple4: hsl(300, 100%, 25%);
 
     --gray1: hsl(0, 1%, 90%);
+    --gray2: #7A7A7A;
 }
 
 body{
     font-family: 'Roboto-thin', sans-serif;
     font-size: clamp(0.75rem, 2.5vw, 1.5rem);
-    margin-left: 70px;
+    margin-left: 4%;
+    display: block;
+
 }
 
 .project_image{
@@ -76,7 +79,7 @@ ul.nav_list li:last-child a:hover{
 }
 
 .short-description{
-    color: #7A7A7A;
+    color: var(--gray2);
     font-size: clamp(0.7rem, 1.1vw, 1.3rem);
 
 }
@@ -241,13 +244,13 @@ ul.nav_list li:last-child a:hover{
 
 .social-media-icons li{
     display: inline-block;
-    font-size: clamp(1.5rem, 2.5vw, 4rem);
+    font-size: clamp(1.3rem, 2.5vw, 4rem);
     padding: 0 20px;
 }
 
 .contact-form{
-    width: 50%;
-    min-width: 300px;
+    width: 90%;
+    min-width: 200px;
 }
 
 .contact-form input[type="text"], .contact-form input[type="email"]{
@@ -259,7 +262,7 @@ ul.nav_list li:last-child a:hover{
 }
 
 .contact-form-items{
-    display: block;
+    display: inline;
     box-sizing: border-box;
     width: 100%;
     margin: 0;
@@ -274,12 +277,55 @@ ul.nav_list li:last-child a:hover{
     border-radius: 25px;
 }
 
+.h2-heading{
+    display: inline;
+}
+
+.about-me-section{
+    display: flex;
+}
+
+section{
+    margin-top: 2em;
+}
+
+.contact-article{
+    width: 50%;
+}
+
+.about-me-article{
+    display: inline-block;
+    max-width: 45%;
+}
+
+.about-me-article p{
+    color: var(--gray2);
+}
+
 
 @media only screen and (max-width:1050px){
     .right-presentation div img{
         display: block;
         width: 80%;
         margin: 0 auto;
+    }
+
+    .language-wrapper{
+        margin: 0 auto;
+        display: block;
+    }
+
+    .about-me-section{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-article{
+        width: 80%;
+    }
+
+    .about-me-article{
+        max-width: 80%;
     }
 
     .nav_list{
@@ -332,6 +378,7 @@ ul.nav_list li:last-child a:hover{
     }
 
     .h2-heading{
+        display: block;
         text-align: center;
         width: 75%;
         margin-right: auto;
@@ -343,9 +390,17 @@ ul.nav_list li:last-child a:hover{
         width: 75%;
     }
 
+    .social-media-icons{
+        margin: 0 auto;
+    }
+
     .social-media-icons li {
-        /*font-size: clamp(2rem, 12vw, 20rem);*/
-        font-size: 5vw;
+        /*font-size: clamp(2rem, 4vw, 20rem);*/
+        /*padding-left: clamp(10px, 6vw, 600px);
+        padding-right: clamp(10px, 4vw, 600px);*/
+        padding-right: 4vw;
+        padding-left: 4vw;
+        font-size: 4.5vw;
     }
 
     body{
