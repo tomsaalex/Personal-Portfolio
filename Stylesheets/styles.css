@@ -302,6 +302,10 @@ section{
     color: var(--gray2);
 }
 
+.project-link{
+    text-decoration: none;
+    color: black;
+}
 
 @media only screen and (max-width:1050px){
     .right-presentation div img{
